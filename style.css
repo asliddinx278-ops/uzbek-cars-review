@@ -1,0 +1,205 @@
+/* Umumiy stil */
+:root {
+  --primary: #2563eb;
+  --danger: #ef4444;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --gray: #64748b;
+  --border: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--primary), #1d4ed8);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Asosiy kontent */
+main {
+  padding: 1rem 0;
+}
+
+h2 {
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.car-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.car-list li {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.car-list a {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.car-list a:hover {
+  color: var(--primary);
+}
+
+/* Mashina sahifasi */
+.car-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.car-header h1 {
+  font-size: 2.2rem;
+  color: var(--primary);
+}
+
+.car-header nav a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.car-header nav a:hover {
+  text-decoration: underline;
+}
+
+.car-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bad-points {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin: 2rem 0;
+}
+
+.bad-points h2 {
+  color: var(--danger);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bad-points h2::before {
+  content: "⚠️";
+  font-size: 1.5em;
+}
+
+.bad-points ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.bad-points li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bad-points li:last-child {
+  border-bottom: none;
+}
+
+.bad-points li::before {
+  content: "❌";
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobilga moslashuvchanlik */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .car-list {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 95%;
+  }
+}

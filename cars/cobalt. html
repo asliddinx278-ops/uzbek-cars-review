@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chevrolet Cobalt – Yomon taraflari</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <div class="container car-header">
+      <h1>Chevrolet Cobalt</h1>
+      <nav><a href="../index.html">← Bosh sahifa</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <img src="https://auto.uzbekistan.uz/upload/iblock/cobalt.jpg" alt="Cobalt" class="car-image" />
+    <p>O‘zbekistonda 2013-yildan beri ishlab chiqarilmoqda.</p>
+
+    <section class="bad-points">
+      <h2>Yomon taraflari</h2>
+      <ul>
+        <li>Plastik sifati past – salon tez eskiradi</li>
+        <li>Dvigatel shovqinli – 1.5L haydashda ovozli</li>
+        <li>Yoritish past – faralar yorug‘ligi yetarli emas</li>
+        <li>Narxi yuqori – 79 mln so‘m, lekin jihozlari kam</li>
+        <li>Eski avtomat karobka – 6-tezlik, lekin sekin</li>
+      </ul>
+    </section>
+
+    <h2>Fikr bildirish</h2>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = "https://asliddinx278-ops.github.io/ozbek-mashinalar/cars/cobalt.html";
+        this.page.identifier = "cobalt";
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ozbekcars.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>2025 | Ma’lumotlar ochiq manbadan | <a href="https://github.com/asliddinx278-ops/ozbek-mashinalar">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
